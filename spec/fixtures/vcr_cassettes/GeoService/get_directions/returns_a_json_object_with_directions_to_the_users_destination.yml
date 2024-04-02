@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?api_key=xRaa7pIVnk7V8byw99umU89shiFKcEZ3&from=15920%20W%203rd%20Pl.%20Golden,%20Co.%2080401&to=1000%2010th%20St%20Golden,%20CO.%2080401
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Thu, 28 Mar 2024 15:06:38 GMT
+      Content-Type:
+      - text/plain; charset=UTF-8
+      Content-Length:
+      - '50'
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - Key realm="kong"
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - MapQuest
+    body:
+      encoding: UTF-8
+      string: The AppKey submitted with this request is invalid.
+  recorded_at: Thu, 28 Mar 2024 15:06:37 GMT
+recorded_with: VCR 6.2.0

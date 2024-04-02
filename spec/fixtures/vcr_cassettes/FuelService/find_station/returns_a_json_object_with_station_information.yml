@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=e0BXB5Y3Awm3IelxZh4YzaQBzlMYa9N5QuVLFZaO&fuel_type=ELEC&limit=1&location=Golden&radius=infinite
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Apr 2024 15:12:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Tue, 02 Apr 2024 15:12:05 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536000; preload
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding,Origin
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Api-Umbrella-Request-Id:
+      - cejtf0o1pi95vi8fascg
+      X-Cache:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '999'
+      X-Request-Id:
+      - b0e28a13361e83785b3afb85070fb391
+      X-Runtime:
+      - '0.301527'
+      X-Vcap-Request-Id:
+      - 123e2a36-42ce-495b-51b2-29b9a745b7a5
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.75665,"longitude":-105.22495,"location_country":"US","precision":{"value":4,"name":"locality","types":["locality","political"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":70607,"station_counts":{"total":191701,"fuels":{"BD":{"total":0},"E85":{"total":0},"ELEC":{"total":191701,"stations":{"total":70607}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":0},"LPG":{"total":0},"RD":{"total":0}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"24
+        hours daily","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2024-04-02","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":161477,"maximum_vehicle_class":null,"open_date":"2020-06-12","owner_type_code":null,"restricted_access":null,"status_code":"E","facility_type":null,"station_name":"GOLDEN
+        STATIONS CITY HALL ANNEX","station_phone":"888-758-4389","updated_at":"2024-04-02T00:23:59Z","geocode_status":"GPS","latitude":39.756445,"longitude":-105.225926,"city":"Golden","country":"US","intersection_directions":null,"plus4":null,"state":"CO","street_address":"1000
+        10th St","zip":"80401","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_has_rng":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"ev_pricing":null,"ev_renewable_source":null,"ev_workplace_charging":false,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_has_rng":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_nozzle_types":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"rd_blended_with_biodiesel":null,"rd_blends":null,"rd_blends_fr":null,"rd_max_biodiesel_level":null,"nps_unit_name":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["USCPIL113209"],"posts":["24784221","24784231"]},"distance":0.05386,"distance_km":0.08668}]}'
+  recorded_at: Tue, 02 Apr 2024 15:12:04 GMT
+recorded_with: VCR 6.2.0

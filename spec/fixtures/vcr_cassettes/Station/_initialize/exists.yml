@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?api_key=e0BXB5Y3Awm3IelxZh4YzaQBzlMYa9N5QuVLFZaO&fuel_type=ELEC&limit=1&location=15920%20W%203rd%20Pl,%20Golden,%20Co,%2080401&radius=infinite
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Apr 2024 15:53:28 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Max-Age:
+      - '86400'
+      Age:
+      - '0'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Last-Modified:
+      - Tue, 02 Apr 2024 15:53:28 GMT
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      - max-age=31536000; preload
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding,Origin
+      Via:
+      - https/1.1 api-umbrella (ApacheTrafficServer [cMsSf ])
+      X-Api-Umbrella-Request-Id:
+      - ceju1v1jicbceu45b260
+      X-Cache:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Remaining:
+      - '993'
+      X-Request-Id:
+      - 818fcad05d9e209ee73f1d44c76c01b1
+      X-Runtime:
+      - '0.278418'
+      X-Vcap-Request-Id:
+      - 7edcb04c-84a1-4890-52bb-acb70bf74a61
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"latitude":39.72139,"longitude":-105.17864,"location_country":"US","precision":{"value":8,"name":"address","types":["street_address"]},"station_locator_url":"https://afdc.energy.gov/stations/","total_results":70607,"station_counts":{"total":191701,"fuels":{"BD":{"total":0},"E85":{"total":0},"ELEC":{"total":191701,"stations":{"total":70607}},"HY":{"total":0},"LNG":{"total":0},"CNG":{"total":0},"LPG":{"total":0},"RD":{"total":0}}},"offset":0,"fuel_stations":[{"access_code":"public","access_days_time":"24
+        hours daily","access_detail_code":null,"cards_accepted":null,"date_last_confirmed":"2024-04-02","expected_date":null,"fuel_type_code":"ELEC","groups_with_access_code":"Public","id":182821,"maximum_vehicle_class":null,"open_date":"2021-01-27","owner_type_code":null,"restricted_access":null,"status_code":"E","facility_type":null,"station_name":"KOHL''S
+        - CHPT 0421 GOLDEN","station_phone":"888-758-4389","updated_at":"2024-04-02T00:46:19Z","geocode_status":"GPS","latitude":39.723135,"longitude":-105.18756,"city":"Golden","country":"US","intersection_directions":null,"plus4":null,"state":"CO","street_address":"16700
+        W Colfax Ave","zip":"80401","bd_blends":null,"cng_dispenser_num":null,"cng_fill_type_code":null,"cng_has_rng":null,"cng_psi":null,"cng_renewable_source":null,"cng_total_compression":null,"cng_total_storage":null,"cng_vehicle_class":null,"e85_blender_pump":null,"e85_other_ethanol_blends":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
+        Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"ev_pricing":null,"ev_renewable_source":null,"ev_workplace_charging":false,"hy_is_retail":null,"hy_pressures":null,"hy_standards":null,"hy_status_link":null,"lng_has_rng":null,"lng_renewable_source":null,"lng_vehicle_class":null,"lpg_nozzle_types":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"rd_blended_with_biodiesel":null,"rd_blends":null,"rd_blends_fr":null,"rd_max_biodiesel_level":null,"nps_unit_name":null,"access_days_time_fr":null,"intersection_directions_fr":null,"bd_blends_fr":null,"groups_with_access_code_fr":"Public","ev_pricing_fr":null,"ev_network_ids":{"station":["USCPIL687941"],"posts":["917591","917601"]},"distance":0.49023,"distance_km":0.78895}]}'
+  recorded_at: Tue, 02 Apr 2024 15:53:28 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=15920%20W%203rd%20Pl,%20Golden,%20Co,%2080401&key=fh92xh9zPZ9Jvs7jx61ypRA9iiBjWhyM&to=16700%20W%20Colfax%20Ave,%20Golden,%20CO,%2080401
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 02 Apr 2024 15:53:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '7502'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 25d156e0-f109-11ee-83ac-219a7583e015
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"1d4e-4qTsFF46aWuVA8zZxKROkwDLJfU"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJzZXNzaW9uSWQiOiJBSEVBX3ZfX193TUFBUUNjQUFBQWVOcGptTVBBd01UQXdNQ2VrVnFVYXBXY2U2VThUd0xJWlhqWC10MkppMUg2Z29ucFJ6NzdHQmpOZ0FQOEJ3S1lDWHdWVTZWQllsZG5fZEprWUZTZFptVDZjTDU5REloLU1CLV9DU0I2ZnJhdmdobVFWbUJtWUhDVTVBQUFQUUFrMmFSckxUTTpjYXIiLCJyZWFsVGltZSI6MzQ1LCJkaXN0YW5jZSI6Mi41OTI0LCJ0aW1lIjozMDcsImZvcm1hdHRlZFRpbWUiOiIwMDowNTowNyIsImhhc0hpZ2h3YXkiOnRydWUsImhhc1RvbGxSb2FkIjpmYWxzZSwiaGFzQnJpZGdlIjpmYWxzZSwiaGFzU2Vhc29uYWxDbG9zdXJlIjpmYWxzZSwiaGFzVHVubmVsIjpmYWxzZSwiaGFzRmVycnkiOmZhbHNlLCJoYXNVbnBhdmVkIjpmYWxzZSwiaGFzVGltZWRSZXN0cmljdGlvbiI6ZmFsc2UsImhhc0NvdW50cnlDcm9zcyI6ZmFsc2UsImxlZ3MiOlt7ImluZGV4IjowLCJoYXNUb2xsUm9hZCI6ZmFsc2UsImhhc0hpZ2h3YXkiOnRydWUsImhhc0JyaWRnZSI6ZmFsc2UsImhhc1VucGF2ZWQiOmZhbHNlLCJoYXNUdW5uZWwiOmZhbHNlLCJoYXNTZWFzb25hbENsb3N1cmUiOmZhbHNlLCJoYXNGZXJyeSI6ZmFsc2UsImhhc0NvdW50cnlDcm9zcyI6ZmFsc2UsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJkaXN0YW5jZSI6Mi41OTI0LCJ0aW1lIjozNDUsImZvcm1hdHRlZFRpbWUiOiIwMDowNTo0NSIsIm9yaWdJbmRleCI6MCwib3JpZ05hcnJhdGl2ZSI6IiIsImRlc3RJbmRleCI6MCwiZGVzdE5hcnJhdGl2ZSI6IiIsIm1hbmV1dmVycyI6W3siaW5kZXgiOjAsImRpc3RhbmNlIjowLjA0OTEsIm5hcnJhdGl2ZSI6IkhlYWQgd2VzdCBvbiBXIDNyZCBQbC4gR28gZm9yIDI1OSBmdC4iLCJ0aW1lIjoxNCwiZGlyZWN0aW9uIjo3LCJkaXJlY3Rpb25OYW1lIjoiV2VzdCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDoxNCIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzkuNzIxMzksImxuZyI6LTEwNS4xNzg2NH0sInR1cm5UeXBlIjowLCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6WyJXIDNyZCBQbCJdLCJtYXBVcmwiOiJodHRwczovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9Zmg5MnhoOXpQWjlKdnM3ang2MXlwUkE5aWlCaldoeU0mc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43MjEzOSwtMTA1LjE3ODY0fG1hcmtlci0xfHwzOS43MjEzOSwtMTA1LjE3OTU2fG1hcmtlci0yfHwmY2VudGVyPTM5LjcyMTM5LC0xMDUuMTc5MSZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNiZzZXNzaW9uPUFIRUFfdl9fX3dNQUFRQ2NBQUFBZU5wam1NUEF3TVRBd01DZWtWcVVhcFdjZTZVOFR3TElaWGpYLXQySmkxSDZnb25wUno3N0dCak5nQVA4QndLWUNYd1ZVNlZCWWxkbl9kSmtZRlNkWm1UNmNMNTlESWgtTUItX0NTQjZmcmF2Z2htUVZtQm1ZSENVNUFBQVBRQWsyYVJyTFRNOmNhciJ9LHsiaW5kZXgiOjEsImRpc3RhbmNlIjowLjIxOTMsIm5hcnJhdGl2ZSI6IlR1cm4gcmlnaHQgb250byBPcmNoYXJkIFN0LiBHbyBmb3IgMC4yIG1pLiIsInRpbWUiOjQwLCJkaXJlY3Rpb24iOjEsImRpcmVjdGlvbk5hbWUiOiJOb3J0aCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDo0MCIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzkuNzIxMzksImxuZyI6LTEwNS4xNzk1Nn0sInR1cm5UeXBlIjoyLCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6WyJPcmNoYXJkIFN0Il0sIm1hcFVybCI6Imh0dHBzOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1maDkyeGg5elBaOUp2czdqeDYxeXBSQTlpaUJqV2h5TSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5LjcyMTM5LC0xMDUuMTc5NTZ8bWFya2VyLTJ8fDM5LjcyNDQ5LC0xMDUuMTc5Mjc5OTk5OTk5OTl8bWFya2VyLTN8fCZjZW50ZXI9MzkuNzIyOTQsLTEwNS4xNzk0MiZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNSZzZXNzaW9uPUFIRUFfdl9fX3dNQUFRQ2NBQUFBZU5wam1NUEF3TVRBd01DZWtWcVVhcFdjZTZVOFR3TElaWGpYLXQySmkxSDZnb25wUno3N0dCak5nQVA4QndLWUNYd1ZVNlZCWWxkbl9kSmtZRlNkWm1UNmNMNTlESWgtTUItX0NTQjZmcmF2Z2htUVZtQm1ZSENVNUFBQVBRQWsyYVJyTFRNOmNhciJ9LHsiaW5kZXgiOjIsImRpc3RhbmNlIjowLjc3NjcsIm5hcnJhdGl2ZSI6IkNvbnRpbnVlIG9uIFcgNnRoIEF2ZS4gR28gZm9yIDAuOCBtaS4iLCJ0aW1lIjo5OSwiZGlyZWN0aW9uIjo4LCJkaXJlY3Rpb25OYW1lIjoiRWFzdCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMTozOSIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzkuNzI0NDksImxuZyI6LTEwNS4xNzkyNzk5OTk5OTk5OX0sInR1cm5UeXBlIjowLCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6WyJXIDZ0aCBBdmUiXSwibWFwVXJsIjoiaHR0cHM6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PWZoOTJ4aDl6UFo5SnZzN2p4NjF5cFJBOWlpQmpXaHlNJnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNzI0NDksLTEwNS4xNzkyNzk5OTk5OTk5OXxtYXJrZXItM3x8MzkuNzIzNTcsLTEwNS4xNjU0NnxtYXJrZXItNHx8JmNlbnRlcj0zOS43MjQwMywtMTA1LjE3MjM3JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTEzJnNlc3Npb249QUhFQV92X19fd01BQVFDY0FBQUFlTnBqbU1QQXdNVEF3TUNla1ZxVWFwV2NlNlU4VHdMSVpYalgtdDJKaTFINmdvbnBSejc3R0JqTmdBUDhCd0tZQ1h3VlU2VkJZbGRuX2RKa1lGU2RabVQ2Y0w1OURJaC1NQi1fQ1NCNmZyYXZnaG1RVm1CbVlIQ1U1QUFBUFFBazJhUnJMVE06Y2FyIn0seyJpbmRleCI6MywiZGlzdGFuY2UiOjAuMTcwMywibmFycmF0aXZlIjoiVHVybiBsZWZ0IG9udG8gSW5kaWFuYSBTdCAoQ1ItMTYxIE4pLiBHbyBmb3IgMC4yIG1pLiIsInRpbWUiOjQ1LCJkaXJlY3Rpb24iOjEsImRpcmVjdGlvbk5hbWUiOiJOb3J0aCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDo0NSIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzkuNzIzNTcsImxuZyI6LTEwNS4xNjU0Nn0sInR1cm5UeXBlIjo2LCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6WyJDUi0xNjEiLCJJbmRpYW5hIFN0IiwiRGVudmVyIFdlc3QgQ29sb3JhZG8gTWlsbHMgQmx2ZCJdLCJtYXBVcmwiOiJodHRwczovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9Zmg5MnhoOXpQWjlKdnM3ang2MXlwUkE5aWlCaldoeU0mc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43MjM1NywtMTA1LjE2NTQ2fG1hcmtlci00fHwzOS43MjYwMywtMTA1LjE2NTM0OTk5OTk5OTk5fG1hcmtlci01fHwmY2VudGVyPTM5LjcyNDgsLTEwNS4xNjU0MDQ5OTk5OTk5OSZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNSZzZXNzaW9uPUFIRUFfdl9fX3dNQUFRQ2NBQUFBZU5wam1NUEF3TVRBd01DZWtWcVVhcFdjZTZVOFR3TElaWGpYLXQySmkxSDZnb25wUno3N0dCak5nQVA4QndLWUNYd1ZVNlZCWWxkbl9kSmtZRlNkWm1UNmNMNTlESWgtTUItX0NTQjZmcmF2Z2htUVZtQm1ZSENVNUFBQVBRQWsyYVJyTFRNOmNhciJ9LHsiaW5kZXgiOjQsImRpc3RhbmNlIjoxLjI3MDEsIm5hcnJhdGl2ZSI6IlR1cm4gbGVmdCBhbmQgdGFrZSByYW1wIG9udG8gVVMtNiBXIChXIDZ0aCBBdmUpLiBHbyBmb3IgMS4zIG1pLiIsInRpbWUiOjEzNSwiZGlyZWN0aW9uIjo3LCJkaXJlY3Rpb25OYW1lIjoiV2VzdCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMjoxNSIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzkuNzI2MDMsImxuZyI6LTEwNS4xNjUzNDk5OTk5OTk5OX0sInR1cm5UeXBlIjoxMywiYXR0cmlidXRlcyI6MCwiaWNvblVybCI6IiIsInN0cmVldHMiOlsiVVMtNiIsIlcgNnRoIEF2ZSJdLCJtYXBVcmwiOiJodHRwczovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9Zmg5MnhoOXpQWjlKdnM3ang2MXlwUkE5aWlCaldoeU0mc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOS43MjYwMywtMTA1LjE2NTM0OTk5OTk5OTk5fG1hcmtlci01fHwzOS43MjUyODk5OTk5OTk5OTQsLTEwNS4xODkxNHxtYXJrZXItNnx8JmNlbnRlcj0zOS43MjU2NiwtMTA1LjE3NzI0NSZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xMiZzZXNzaW9uPUFIRUFfdl9fX3dNQUFRQ2NBQUFBZU5wam1NUEF3TVRBd01DZWtWcVVhcFdjZTZVOFR3TElaWGpYLXQySmkxSDZnb25wUno3N0dCak5nQVA4QndLWUNYd1ZVNlZCWWxkbl9kSmtZRlNkWm1UNmNMNTlESWgtTUItX0NTQjZmcmF2Z2htUVZtQm1ZSENVNUFBQVBRQWsyYVJyTFRNOmNhciJ9LHsiaW5kZXgiOjUsImRpc3RhbmNlIjowLjEwNjksIm5hcnJhdGl2ZSI6IlR1cm4gc2xpZ2h0bHkgbGVmdCBvbnRvIFcgQ29sZmF4IEF2ZSAoSS03MC1CTCkgdG93YXJkIFVTLTQwIFcuIEdvIGZvciAwLjEgbWkuIiwidGltZSI6MTIsImRpcmVjdGlvbiI6NiwiZGlyZWN0aW9uTmFtZSI6IlNvdXRod2VzdCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDoxMiIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzkuNzI1Mjg5OTk5OTk5OTk0LCJsbmciOi0xMDUuMTg5MTR9LCJ0dXJuVHlwZSI6NywiYXR0cmlidXRlcyI6MCwiaWNvblVybCI6IiIsInN0cmVldHMiOlsiSS03MC1CTCIsIlVTLTQwIiwiVyBDb2xmYXggQXZlIl0sIm1hcFVybCI6Imh0dHBzOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1maDkyeGg5elBaOUp2czdqeDYxeXBSQTlpaUJqV2h5TSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5LjcyNTI4OTk5OTk5OTk5NCwtMTA1LjE4OTE0fG1hcmtlci02fHwzOS43MjQ0OTk5OTk5OTk5OSwtMTA1LjE5MDg2OTk5OTk5OTk5fG1hcmtlci03fHwmY2VudGVyPTM5LjcyNDg5NDk5OTk5OTk5LC0xMDUuMTkwMDA0OTk5OTk5OTkmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTYmc2Vzc2lvbj1BSEVBX3ZfX193TUFBUUNjQUFBQWVOcGptTVBBd01UQXdNQ2VrVnFVYXBXY2U2VThUd0xJWlhqWC10MkppMUg2Z29ucFJ6NzdHQmpOZ0FQOEJ3S1lDWHdWVTZWQllsZG5fZEprWUZTZFptVDZjTDU5REloLU1CLV9DU0I2ZnJhdmdobVFWbUJtWUhDVTVBQUFQUUFrMmFSckxUTTpjYXIifSx7ImluZGV4Ijo2LCJkaXN0YW5jZSI6MCwibmFycmF0aXZlIjoiQXJyaXZlIGF0IFcgQ29sZmF4IEF2ZSAoSS03MC1CTCkuIiwidGltZSI6MCwiZGlyZWN0aW9uIjowLCJkaXJlY3Rpb25OYW1lIjoiTm9uZSIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDowMCIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzkuNzI0NDk5OTk5OTk5OTksImxuZyI6LTEwNS4xOTA4Njk5OTk5OTk5OX0sInR1cm5UeXBlIjowLCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6W119XX1dLCJvcHRpb25zIjp7InJvdXRlVHlwZSI6IkZBU1RFU1QiLCJuYXJyYXRpdmVUeXBlIjoidGV4dCIsImVuaGFuY2VkTmFycmF0aXZlIjpmYWxzZSwid2Fsa2luZ1NwZWVkIjotMSwiaGlnaHdheUVmZmljaWVuY3kiOjIyLCJhdm9pZHMiOmZhbHNlLCJnZW5lcmFsaXplIjotMSwic2hhcGVGb3JtYXQiOiJyYXciLCJ1bml0IjoiTSIsImxvY2FsZSI6ImVuX1VTIiwidXNlVHJhZmZpYyI6ZmFsc2UsInRpbWVUeXBlIjowLCJkYXRlVHlwZSI6MCwiZG9SZXZlcnNlR2VvY29kZSI6dHJ1ZSwibWFuTWFwcyI6dHJ1ZSwidG9sbENvc3QiOmZhbHNlLCJzaWRlT2ZTdHJlZXREaXNwbGF5Ijp0cnVlfSwiYm91bmRpbmdCb3giOnsidWwiOnsibGF0IjozOS43MjYwNDAwMDAwMDAwMDUsImxuZyI6LTEwNS4xOTA4Njk5OTk5OTk5OX0sImxyIjp7ImxhdCI6MzkuNzIxMzksImxuZyI6LTEwNS4xNjUzMzk5OTk5OTk5OX19LCJuYW1lIjoiVVMtNiBhbmQgVyA2dGggQXZlIiwibWF4Um91dGVzIjoiIiwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIxNTkyMCBXIDNyZCBQbCIsImFkbWluQXJlYTYiOiJFYXN0IE9sZCBHb2xkZW4gUm9hZCIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkdvbGRlbiIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJKZWZmZXJzb24iLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJDTyIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiODA0MDEtNTU2MiIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IlAxQUFBIiwiZ2VvY29kZVF1YWxpdHkiOiJBRERSRVNTIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiUiIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjM5LjcyMTM5LCJsbmciOi0xMDUuMTc4NjR9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6MzkuNzIxMTksImxuZyI6LTEwNS4xNzg2NH0sIm1hcFVybCI6IiJ9LHsic3RyZWV0IjoiMTY3MDAgVyBDb2xmYXggQXZlIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkdvbGRlbiIsImFkbWluQXJlYTVUeXBlIjoiQ2l0eSIsImFkbWluQXJlYTQiOiJKZWZmZXJzb24iLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJDTyIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiODA0MDEtMzg2NyIsImdlb2NvZGVRdWFsaXR5Q29kZSI6IkwxQUFBIiwiZ2VvY29kZVF1YWxpdHkiOiJBRERSRVNTIiwiZHJhZ1BvaW50IjpmYWxzZSwic2lkZU9mU3RyZWV0IjoiTCIsImxpbmtJZCI6IjAiLCJ1bmtub3duSW5wdXQiOiIiLCJ0eXBlIjoicyIsImxhdExuZyI6eyJsYXQiOjM5LjcyNDUsImxuZyI6LTEwNS4xOTA4N30sImRpc3BsYXlMYXRMbmciOnsibGF0IjozOS43MjQzOSwibG5nIjotMTA1LjE5MDc4fSwibWFwVXJsIjoiIn1dLCJsb2NhdGlvblNlcXVlbmNlIjpbMCwxXX0sImluZm8iOnsic3RhdHVzY29kZSI6MCwiY29weXJpZ2h0Ijp7InRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsImltYWdlQWx0VGV4dCI6IsKpIDIwMjQgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOltdfX0=
+  recorded_at: Tue, 02 Apr 2024 15:53:29 GMT
+recorded_with: VCR 6.2.0

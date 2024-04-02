@@ -2,6 +2,8 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.2"
+gem "faraday"
+gem "figaro"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3"
@@ -47,6 +49,10 @@ group :test do
   gem "launchy"
   gem "vcr"
   gem "webmock"
+  gem "simplecov"
+  gem "shoulda-matchers"
+  gem "factory_bot_rails"
+  gem "faker"
 end
 
 group :development do
